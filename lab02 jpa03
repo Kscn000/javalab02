@@ -1,0 +1,16 @@
+import java.util.*;
+public class jpa03 {
+    static Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        test();
+        test();
+    }
+    public static void test() {
+        System.out.println("Input an integer:");
+        int a = input.nextInt();
+        if(a % 2 == 1) System.out.println("The number is odd.");
+        else System.out.println("The number is even.");
+
+        
+    }
+}
