@@ -1,0 +1,33 @@
+import java.util.*;
+public class jpa07{
+ static Scanner keyboard = new Scanner(System.in);
+  public static void main(String[] args) {
+  test();        
+  test();
+  test();
+  test();
+ }
+ static void test() {
+  int a,b,c,t;
+  System.out.print("請輸入三個整數:");
+  a=keyboard.nextInt();
+  b=keyboard.nextInt();
+  c=keyboard.nextInt();
+  if (a<b){
+   t=a;
+   a=b;
+   b=t;
+  }
+  if (a<c){
+   t=c;
+   c=a;
+   a=t;
+  }
+  if (a<b+c){
+   if(a*a==b*b+c*c)System.out.println("直角三角形");
+   else if((a*a>b*b+c*c))System.out.println("鈍角三角形");
+   else System.out.println("銳角三角形");
+  }
+  else System.out.println("不可以構成三角形");
+ }
+}
