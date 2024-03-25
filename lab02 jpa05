@@ -1,0 +1,20 @@
+import java.util.*;
+public class jpa05 {
+    static Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        test();
+        test();
+        test();
+        test();
+
+    }
+    static void test(){
+        System.out.println("Enter an integer:");
+        int k = input.nextInt();
+        if(k % 6 == 0) System.out.println(k + "是2、3、6的倍數");
+        else if(k % 2 == 0) System.out.println(k + "是2的倍數");
+        else if(k % 3 == 0) System.out.println(k + "是3的倍數");
+        else System.out.println(k + "不是2、3、6的倍數");
+    }
+    
+}
