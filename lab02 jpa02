@@ -1,0 +1,24 @@
+import java.util.*;
+public class jpa02 {
+
+    static Scanner key = new Scanner(System.in);
+    public static void main(String[] args) {
+        test();
+        test();
+    }
+    public static void test() {
+        System.out.println("Input:");
+        int num1 = key.nextInt();
+        int num2 = key.nextInt();
+        if (num1 > num2) {
+            System.out.println(num1+" is larger than " + num2);
+           }
+           else if (num2 > num1) {
+            System.out.println(num2+ " is larger than " + num1);
+           }
+           else {
+            System.out.println(num1+" and "+num2+" are equal.");
+           }
+        
+    }
+}
